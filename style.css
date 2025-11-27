@@ -1,295 +1,81 @@
-body{
-  /* background-image: url(https://i.imgur.com/2MLPbz5.jpeg);
-  background-repeat: round;
-  background-size: calc(380px - 9vw);
-  background-blend-mode: multiply;
-  background-color: rgba(226, 108, 237, 0.789);  */
-
-  font-family:"Ｐゴシック", "MS PGothic", "Mona", sans-serif;
-
-  margin: 0;
-  margin-top: 0;
-  padding: 0;
-;
-}
-
-
-a{
-  text-decoration: none;
-  color: inherit;
-  font-size: inherit;
-}
-
-.titulo-background{
-  background-color: rgb(23, 29, 36);
-  overflow: hidden;
-  height: auto;
-}
-.titulo{
-   display: block;
-   justify-self: center; 
-   font-family: "Ｐゴシック";
-
-  color: #FF0084;
-  background-color: lightblue;
- 
-  border: 8px double #ffdc52;
-  border-radius: 40%;
-
-  box-shadow: 0px 0px 4px 3px #ffffff, 0px 0px 40px 20px #ff56ae;
-
-  margin-bottom: 0%;
-  margin-top: 5%;
-
-  padding: 25px;
-
-  font-size: 17px;
-  transform: rotate(0deg);
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>  
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8">
   
-  -webkit-text-stroke-color: #efc0047d;
-  -webkit-text-stroke-width: 1px;
-
-transition: font-size 1s, padding 2s, color 2s, transform 3s, -webkit-text-stroke-width 3s, box-shadow 3s, margin-bottom 1s ease;
-}
-.titulo:hover{
-  display: block;
-   justify-self: center; 
-
-  color: #ff61b3;
-  background-color: lightblue;
- 
-  border: 8px double #efc004;
-  border-radius: 40%;
-
-  box-shadow: 0px 0px 10px 10px #ffffff, 0px 0px 40px 15px #ff83c3;
-
-  margin-bottom: 20%;
-  margin-top: 5%;
-
-  padding: 15px;
-
-  font-size: 35px;
-
-  -webkit-text-stroke-color: #efc004;
-  -webkit-text-stroke-width: 2px;
-}
-.linha{
-  color: #00000000;
-
-  margin-bottom: 0;
-  margin-top: 5%;
-
-  width: 100%;
-  height: 0px;
-
-  text-align: center;
+  <title>lAihZigC7eTtzSS1893gTQ</title>
   
-  padding: 0%;
-  border-width: 0px;
-
-  border-bottom: 5px double white;
-  border-top: 5px double white;
-  border-radius: 20px;
-}
-
-
-.corpo{
-  background-image: url(https://i.imgur.com/2MLPbz5.jpeg);
-  background-repeat: round;
-  background-size: calc(500px - 20vw);
-  background-position: center;
-  background-blend-mode: multiply;
-  background-color: rgba(226, 108, 237, 0.789);
-
-  padding-top: 15px;
-  /* min-height: 100vh !IMPORTANT; */
-  /* width: 100%; */
-}
-
-
-.animacao-piscar:hover{
-  animation-name: pisca;
-animation-duration: 0.2s;
-animation-iteration-count: infinite;
-animation-timing-function: linear;
-
-}
-.pink-background { 
-  background: linear-gradient(25deg, #68073a 1%, #FF0084 15%, #FFBAFF 100%);
-  font-family: 'Courier New', Courier, monospace;
-  transform: translate(-25%, 0%);
-
-  top: 100%;
-  margin-left: 20%;
-  margin-bottom: 1%;
-
-  padding: 10px;
-
-  border: 3px outset rgba(77, 4, 77, 0.6);
-  border-radius: calc(5px + 3px * 8);
-  border-width: 5px;
-
-  width: 250px;
-  height: auto;
-
-  color: #ff9dd8;
-  text-align: center;
-
-  outline: solid 3px rgb(255, 0, 174); 
-}
-
-
-/* estes daqui são utilitários */
-.text-maior{
-  font-size: 2rem;
-}
-.sublinha{
-  border-style: dotted none solid none;
-  border-color: white;
-  border-width: 1px;
-  border-radius: 10px;
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="scrollbar.css">
   
-  color: #ff00b7;
-  background-color: black;
-  font-family: cursive;
-}
-/* termino de utilitários */
+</head>
+<body>
+
+<!--titulo com link externo para outro site-->
+<!--obs( faiz um site indisponivel de um site para perfil pessoal )-->
+<div class="titulo-background">
+
+ <div class="titulo animacao-piscar">
+  <h2>
+   <a href="">
+!!!私の個人的な空間!!!
+   </a>
+  </h2>
+ </div>
+
+<!--termino do titulo-->
+  <div class="linha">quem é você?</div>  
+
+</div>
+<!--essa é a caixinha rosa-->
+<div class="corpo">
+ <div class="pink-background">
+  <h2>
+      quem sou eu?
+  </h2>
+ </div>
+<!--essa é a caixinha rosa-->
+
+<!--começo da caixinha de apresentação-->
+<div class="container-duas-colunas"><!--container de todas as caixinhas-->
+
+ <div class="apresentation-pai">
+  <div class="texto-esquerda-filho">
+
+    <img src="https://i.imgur.com/IrwS0dp.png" class="imagem-1">
+
+obrigrada por visitar meuespaço.com<br> acredito que você tenha me encontrado pelo facebook.<br><a href="https://www.facebook.com/EuOdeioAcordarCedoOff/?locale=pt_BR" target="_blank" class="externo">talvez por aqui</a> aonde eu estava mais ativa, não conheço muitas pessoas então estou aberta a conversar pelo meu 
+<!--faça outros site e coloque aqui pfv-->. 
+
+  </div>
+ </div>
+<!--termino da caixinha-->
+
+<!--foto de perfil-->
+ <div class="foto-de-perfil">
+   <div class="foto-de-perfil-filha">
+    <img src="https://i.imgur.com/IrwS0dp.png" class="imagem-2">
+    <p>
+meu nome é: <span class="sublinha">ameboides</span>
+blabla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla blabla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla blabla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla blabla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla
+   </p>
+   </div>  <!-- todas a perfil -->
+ </div> 
+<!--toda apresentation-->
+</div>
+
+ <div class="container-duas-colunas">
+  <div class="caixa-debaixo">
+
+alo galera de peão, alo galera de caqboy, adlknalksalfnlanlknfnskçfnlas
 
 
-.imagem-1 {
+oi black?
 
-  margin: 1% 1% 0% 0%;
-  width: 20vw;
-  max-width: 250px;
-  height: auto;
-  float: right;
+  </div>
+ </div>
+</div>
 
-
-  border-style: double;
-  border-width: 5px;
-  border-color: white;
-  border-radius: 10px 0px 10px 20px;
-
-}
-.imagem-2 {
-
-  margin: 1% 1% 0% 0%;
-  width: 190px;
-  height: 200px;
-
-  
-  border-style: none none double none;
-  border-width: 5px;
-  border-color: white;
-
-
-}
-
-
-.container-duas-colunas{
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  gap: 10px;
-}
-.apresentation-pai{
-
-position: relative;
-top: auto;
-left: 10%;
-transform: translate(-10%, 0);
-margin-right: 3%;
-
-  overflow: auto;
-  padding: 0%;
-  width: 60vw;
-  height: 60vh;
-
-  color: #68073a;
-  
-  background-color: #ffd0f6;
-
-  border-radius: 10px;
-  border-style: double ridge ridge double;
-  border-color: white;
-  border-width: 8px;
-  
-  box-shadow: 0px 0px 30px 10px black;
-}
-
-/*aparência de links*/
-a.externo:link{
-  color: rgb(255, 0, 128);
-  font-weight: bold;
-  box-shadow: 0 0 5px rgba(0, 0, 255, 0) inset;
-  padding: 1px;
-  border-radius: 10px;
-
-  transition: box-shadow 1s, color 1s, padding 1s ease;
-}
-a.externo:hover{
-  color: blue;
-  padding: 3px;
-  box-shadow: 0px 0px 5px rgb(0, 0, 255) inset;
-  border-radius: 10px;
-
-  transition: box-shadow 1s, color 1s, padding 1s ease;
-}
-/*/////////////*/
-
-.texto-esquerda-filho{
-  text-align: left;
-}
-
-
-.foto-de-perfil{
-  
-  width: 200px;
-  height: 300px;
-  font-size: small;
-  padding-left: 0%;
-  text-align: left;
-  margin-left: 0.4%;
-
-  color: #68073a;
-    background: rgb(104, 8, 116);
-    border-radius: 10px;
-    border-style: double ridge ridge double;
-    border-color: white;
-    border-width: 8px;
-  
-overflow-y: scroll;
-overflow-x: hidden;
-
-  box-shadow: 0px 0px 30px black;
-}
-.foto-de-perfil-filha{
-color: white;
-}
-
-
-.caixa-debaixo{
- 
-  position: relative;
-  left: 10%;
-  transform: translate(-10%, 0);
-  margin-right: 5%;
-  margin-bottom: 10%;
-
-  width: 60vw;
-  height: auto;
-
-  color: #68073a;
-  background: pink;
-  border-radius: 10px;
-  border-style: double ridge ridge double;
-  border-color: white;
-  border-width: 8px;
-
-    box-shadow: 0px 10px 30px 5px black;
-}
-
-@keyframes pisca{
-0%{color: #ff0084;}
-100%{color: #ffe1f2;}
-}
+</body>
+</html>
