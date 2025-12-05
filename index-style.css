@@ -1,0 +1,215 @@
+  html{
+    cursor: grab;
+  }
+  html:active{
+    cursor: grabbing;
+  }
+  body{
+  font-family:cursive;
+
+  margin: 0;
+  margin-top: 0;
+  padding: 0;
+
+  background-color: rgb(207, 255, 250);
+}
+
+.titulo-background{
+  background-color: rgb(23, 29, 36);
+  overflow: hidden;
+  height: auto;
+}
+.titulo{
+   display: block;
+   justify-self: center; 
+   font-family: "Ｐゴシック";
+
+  color: #FF0084;
+  background-color: lightblue;
+ 
+  border: 8px double #ffdc52;
+  border-radius: 40%;
+
+  box-shadow: 0px 0px 4px 3px #ffffff, 0px 0px 40px 20px #fffcab;
+
+  margin-bottom: 5%;
+  margin-top: 5%;
+
+  padding: 25px;
+
+  font-size: 17px;
+  transform: rotate(0deg);
+  
+  -webkit-text-stroke-color: #efc0047d;
+  -webkit-text-stroke-width: 1px;
+
+transition: font-size 1s, padding 2s, color 2s, transform 3s, -webkit-text-stroke-width 3s, box-shadow 3s, margin-bottom 1s ease;
+}
+.titulo:hover{
+  display: block;
+   justify-self: center; 
+
+  color: #ff61b3;
+  background-color: lightblue;
+ 
+  border: 8px double #efc004;
+  border-radius: 40%;
+
+  box-shadow: 0px 0px 10px 10px #ffffff, 0px 0px 40px 15px #fffcab;
+
+  margin-bottom: 10%;
+  margin-top: 5%;
+
+  padding: 15px;
+
+  font-size: 35px;
+
+  -webkit-text-stroke-color: #efc004;
+  -webkit-text-stroke-width: 2px;
+}
+
+.linha{
+border-bottom: 4px dotted rgb(255, 255, 255);
+border-top: 4px dotted rgb(255, 255, 255);
+
+color: #ff008400;
+
+font-size: smaller;
+
+background-color: rgb(23, 29, 36);
+
+width: 100%;
+}
+
+.menu-lateral{
+  position: absolute;
+
+  flex-direction: column;
+  
+
+
+  top: auto;
+  left: 2vw;
+  margin-top: 4px;
+
+  width: 160px;  
+  height: fit-content;  
+
+  background-color: rgb(208, 208, 208);
+  border-radius: 5px;
+  border: 3px double black;
+
+  display: flex;
+}
+.menu-topo{
+  width: 100%;
+  
+  margin: 0 5px 0 0;
+
+  text-align: right;
+
+  border-bottom: 2px solid black;
+}
+
+.itens a{
+  color: rgb(0, 200, 255);
+  border: 2px none none solid none black;
+
+  transition: all 0.25s ease-out;
+}
+.itens a:hover{
+  color: rgb(64, 0, 255);
+  font-size: larger;
+  text-decoration: underline rgb(64, 0, 255) double 1px;
+
+  cursor: grab;
+}
+
+.secret a{
+  color: #00000000;
+  text-decoration: none;
+  opacity: 0%;
+  margin-top: 0%;
+  transition: none
+}
+.secret a:hover{
+  color: rgba(77, 0, 0, 0);
+  font-size: 1.5rem;
+  text-decoration: underline rgb(128, 0, 0) double 1px;
+  box-shadow: 0px 0px 10px 5px inset rgb(60, 25, 25);
+  text-shadow: -1px 0px 2px rgb(255, 0, 0);
+
+  cursor: inherit;
+
+  border-radius: 40px;
+  padding: 1%;
+
+  background-image: url(https://everytexture.com/wp-content/uploads/2019/07/everytexture.com-stock-metal-texture-00158-1024x768.jpg);
+  background-size: cover;
+  -webkit-background-clip: text; /* necessário para Chrome/Edge/Safari */
+  background-clip: text;
+  opacity: 100%;
+
+  transition: all 10s ease-in;  
+}
+.menu-lateral .itens{
+  font-size: medium;
+
+  color: rgb(0, 200, 255);
+
+  height: 10px;
+  margin: 20px 10px 20px 10px;
+
+  border-radius: 5px;
+
+}
+
+
+.indisponivel{
+
+
+font-family: 'Courier New', Courier, monospace;
+font-weight: lighter;
+margin: 5vw auto;
+
+text-align: center;
+
+width: fit-content;
+background-color: #5ac0ffb6;
+
+padding: 5%;
+
+color: rgb(0, 0, 0);
+
+border-radius: 20px;
+border: 2px solid black;
+}
+.texto-principal{
+
+  background-color: rgb(216, 248, 255);
+  border-radius: 40px;
+  padding: 3px;
+
+}
+.container-box{
+  line-height: 15px;
+  background-color: rgb(216, 248, 255);
+  padding: 5px;
+  width: fit-content;
+  border-radius: 40px;
+  margin: auto;
+}
+
+.secret{
+  text-align: center;
+}
+.rodape{
+font-family: 'Courier New', Courier, monospace;
+justify-content: center;
+
+display: flex;
+
+margin: 5vw auto 0 auto;
+
+border-top: 1px double black;
+}
