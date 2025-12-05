@@ -1,0 +1,25 @@
+ ::-webkit-scrollbar{
+    width: 15px;
+ }
+ ::-webkit-scrollbar-track{
+    background: black;
+ }
+::-webkit-scrollbar-thumb{
+    background-color: deeppink;
+    background-image: url(https://i.imgur.com/DBbRBx8.jpeg);
+    background-size: cover;
+    background-blend-mode: hard-light;
+
+    border-color: white;
+    border-radius: 30px;
+    border-style: double none double double;
+ }
+
+::-webkit-scrollbar-thumb:hover{
+    background-color: rgb(0, 0, 0);
+    background-size: cover;
+
+    border-color: rgb(255, 255, 255);
+    border-radius: 30px;
+    border-style: double none double double;
+ }
