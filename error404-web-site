@@ -1,0 +1,40 @@
+ <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style> 
+     div{  
+    margin-left: 20vw;
+    margin-top: 5vw;
+    font-family: Courier New, monospace;
+}
+h2{
+    font-size: 3rem;
+    font-weight: bold;
+}
+p{
+    font-weight: lighter;
+    background: black;
+    color: white;
+    width: 50vw;
+    border-radius: 5px;
+    padding: 8px;
+}
+    </style>
+    <title>error 404</title>
+</head>
+
+<body>
+    <div><h2>error 404</h2>
+    <p>site não encontrado,<br>
+    não foi possivel encontrar a página, verifique:<br><br>
+    ◆➱sua conexão internet.<br>
+    ◆➱seu cabo de rede LAN.<br>
+    ◆➱se o link está correto.<br>
+    ◆➱se a página realmente existe.<br><br>
+    
+    e se ela não existe, estáis loko manito? tá procurando oque? o reino perdido?</p></div>
+</body>
+<html>
