@@ -97,8 +97,6 @@ width: 100%;
     position: absolute;
 
     flex-direction: column;
-  
-
 
     top: auto;
     left: 5px;
@@ -118,7 +116,7 @@ width: 100%;
     transform: scale(0.8);
     font-family: 'Courier New', Courier, monospace;
     font-weight: lighter;
-    margin: 5px 4px;
+    margin: 5px 2px auto 2px;
 
     text-align: center;
 
