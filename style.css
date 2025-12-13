@@ -230,11 +230,9 @@ animation-timing-function: linear;
 }
 .apresentation-pai{
 
-position: relative;
-top: auto;
-left: 10%;
-transform: translate(-10%, 0);
-margin-right: 3%;
+  position: relative; 
+  top: auto;
+margin: auto;
 
   overflow: auto;
   padding: 0%;
