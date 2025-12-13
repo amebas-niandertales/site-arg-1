@@ -112,6 +112,7 @@ width: 100%;
     border: 3px double black;
 
     display: flex;
+    z-index: 10;
   }
   .indisponivel{
     transform: scale(0.8);
@@ -130,6 +131,7 @@ width: 100%;
 
     border-radius: 20px;
     border: 2px solid black;
+    z-index: 5;
   }
 }
 .menu-lateral{
