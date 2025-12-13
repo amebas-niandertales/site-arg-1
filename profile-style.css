@@ -90,8 +90,10 @@ background-color: rgb(23, 29, 36);
 
 width: 100%;
 }
+
 @media (max-width: 600px){
   .menu-lateral{
+    transform: scale(0.5);
     position: absolute;
 
     flex-direction: column;
@@ -103,7 +105,7 @@ width: 100%;
     margin-top: 4px;
 
     width: 160px;  
-    height: fit-content;  
+    height: auto;  
 
     background-color: rgb(208, 208, 208);
     border-radius: 5px;
@@ -112,7 +114,26 @@ width: 100%;
     display: flex;
   }
 }
+ .menu-lateral{
+    position: absolute;
 
+    flex-direction: column;
+  
+
+
+    top: auto;
+    left: 2vw;
+    margin-top: 4px;
+
+    width: 160px;  
+    height: auto;  
+
+    background-color: rgb(208, 208, 208);
+    border-radius: 5px;
+    border: 3px double black;
+
+    display: flex;
+  }
 .menu-topo{
   width: 100%;
   
