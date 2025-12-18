@@ -229,10 +229,9 @@ animation-timing-function: linear;
   gap: 10px;
 }
 .apresentation-pai{
-
-  position: relative; 
+ position: static;
   top: auto;
-margin: auto;
+  margin: auto 0% 0% 5vw;
 
   overflow: auto;
   padding: 0%;
@@ -277,14 +276,12 @@ a.externo:hover{
 
 
 .foto-de-perfil{
-  
   width: 200px;
   height: 300px;
   font-size: small;
   padding-left: 0%;
   text-align: left;
-  margin-left: 0.4%;
-
+  
   color: #68073a;
     background: rgb(104, 8, 116);
     border-radius: 10px;
@@ -292,27 +289,23 @@ a.externo:hover{
     border-color: white;
     border-width: 8px;
   
-overflow-y: scroll;
-overflow-x: hidden;
+  overflow-y: scroll;
+  overflow-x: hidden;
 
   box-shadow: 5px 5px 30px 10px black;
 }
 .foto-de-perfil-filha{
 color: white;
-}
+} 
 
 
 .caixa-debaixo{
  
-  position: relative;
-  left: 10%;
-  transform: translate(-10%, 0);
-  margin-right: 5%;
-  margin-bottom: 10%;
+  position: static;
+  margin: auto 0% 0% 5vw;
 
   width: 60vw;
   height: auto;
-
   color: #68073a;
   background: pink;
   border-radius: 10px;
