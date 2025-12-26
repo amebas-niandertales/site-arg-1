@@ -1,11 +1,11 @@
+*{
+  box-sizing: border-box;
+}
 body{
-  /* background-image: url(https://i.imgur.com/2MLPbz5.jpeg);
-  background-repeat: round;
-  background-size: calc(380px - 9vw);
-  background-blend-mode: multiply;
-  background-color: rgba(226, 108, 237, 0.789);  */
-
-  font-family:"Ｐゴシック", "MS PGothic", "Mona", sans-serif;
+  font-family:Comic Sans MS, Comic Sans, cursive, sans-serif;
+  font-weight: 100;
+  font-style: italic;
+  font-size: large;
 
   margin: 0;
   margin-top: 0;
@@ -16,6 +16,17 @@ body{
 }
 body:active{
   cursor: grabbing;
+}
+
+.ALLWrapper{
+  image-rendering: pixelated;
+  image-rendering: crisp-edges;
+  image-rendering: optimizeSpeed;
+
+z-index: 300;
+
+  filter: brightness(110%);
+  filter: contrast(120%);
 }
 
 a{
@@ -123,12 +134,14 @@ transition: font-size 1s, padding 2s, color 2s, transform 3s, -webkit-text-strok
 
 
 .corpo{
-  background-image: url(https://i.imgur.com/2MLPbz5.jpeg);
+  background-image: url(https://i.ibb.co/tMtKVszz/images-min.jpg);
   background-repeat: round;
-  background-size: calc(500px - 20vw);
+  background-size: calc(600px - 15vw);
   background-position: center;
   background-blend-mode: multiply;
   background-color: rgba(226, 108, 237, 0.789);
+  image-rendering: pixelated;
+  image-rendering: crisp-edges;
 
   padding-top: 15px;
 
@@ -188,23 +201,33 @@ animation-timing-function: linear;
 
 
 .imagem-1 {
-
-  margin: 1% 1% 0% 0%;
+  position: relative;
+  margin: 5px 5px 0% 20px;
   width: 20vw;
   max-width: 250px;
   height: auto;
   float: right;
-
 
   border-style: double;
   border-width: 5px;
   border-color: white;
   border-radius: 10px 0px 10px 20px;
 
+  box-shadow: -7px 0px 15px, 0px 0px 15px inset;
 }
 .imagem-1 img{
-  object-fit: cover;
+  width: 100%;
+  height: auto;
+  object-fit: fill;
 }
+.imagem-1 > .textoImg{
+  position: absolute;
+
+  left: 5px;
+  bottom: 5px;
+
+}
+
 .imagem-2 {
 
   margin: 1% 1% 0% 0%;
@@ -234,7 +257,7 @@ animation-timing-function: linear;
   margin: auto 0% 0% 5vw;
 
   overflow: auto;
-  padding: 0%;
+  padding: 0px;
   width: 60vw;
   height: 60vh;
 
@@ -302,7 +325,7 @@ color: white;
 .caixa-debaixo{
  
   position: static;
-  margin: auto 0% 0% 5vw;
+  margin: auto 0% 50px 5vw;
 
   width: 60vw;
   height: auto;
@@ -314,6 +337,20 @@ color: white;
   border-width: 8px;
 
     box-shadow: 0px 10px 30px 5px black;
+}
+
+footer{
+  outline: 10px double rgb(255, 255, 255);
+  padding: 30px;
+  justify-items: center;
+  background: rgb(207, 255, 250);
+  box-shadow: 0px 0px 25px 4px inset;
+}
+footer > p{
+  width: fit-content;
+  text-decoration: underline double;
+  text-shadow: 5px 3px 4px rgba(0, 0, 0, 0.534);
+  color: blue;
 }
 
 @keyframes pisca{
