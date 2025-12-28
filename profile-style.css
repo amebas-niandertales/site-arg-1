@@ -164,6 +164,8 @@ width: 100%;
   border: 2px none none solid none black;
 
   transition: all 0.25s ease-out;
+
+  pointer-events: all;
 }
 .itens a:hover{
   color: rgb(64, 0, 255);
