@@ -5,6 +5,8 @@
   --margin-left: 0% 0% 5px 5vw;
   --black-shadow: rgba(0, 0, 0, 0.562);
   --black-shadow-acive: rgba(0, 0, 0, 0.692);
+  --chekerBoardblack: rgb(0, 0, 0);
+  --chekerBoardWhite: rgb(255, 255, 255);
 }
 *{
   box-sizing: border-box;
@@ -52,10 +54,11 @@ body:active{
 }
 
 .vinheta{
-  z-index: 1;
+  z-index: 2;
 
   position: fixed;
-  background-image: linear-gradient(0deg, #00000000, #50000042);
+  box-shadow: 0px 0px 40px 20px inset;
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0), rgba(80, 0, 0, 0.288));
   background-size: 10px 4px;
   width: 100%;
   height: 100%;
@@ -71,18 +74,18 @@ a{
 
 
 .site-text{
-text-align: center;
-color: white;
-font-family: sans-serif;
+  text-align: center;
+  color: white;
+  font-family: sans-serif;
 
-transform: translateY(20px) scale(0.60);
+  transform: translateY(20px) scale(0.60);
 
-padding: 0 0 0 0;
+  padding: 0 0 0 0;
 
-position: relative;
-opacity: 0;
+  position: relative;
+  opacity: 0;
 
-transition: opacity 1s, margin-top 1s, transform 1s, padding 1s ease;
+  transition: opacity 1s, margin-top 1s, transform 1s, padding 1s ease;
 }
 
 
@@ -146,24 +149,13 @@ transition: font-size 1s, padding 2s, color 2s, transform 3s, -webkit-text-strok
 
   padding: 0 5% 5% 5%;
 }
-.linha{
-  color: #00000000;
-  user-select: text;
 
-  margin-bottom: 0;
-  margin-top: 2%;
-
-  width: 100%;
-  height: 10px;
-
-  text-align: center;
-  
-  padding: 0%;
-  border-width: 0px;
-
-  border-bottom: 5px double white;
-  border-top: 5px double white;
-  border-radius: 20px;
+.algo{
+  color: #ffffff00;
+}
+hr{
+  margin: 0%;
+  border: 1px dashed white;
 }
 
 
@@ -248,6 +240,8 @@ animation-timing-function: linear;
   border-radius: 15px 0px 15px 15px;
 
   box-shadow: -7px 0px 15px, 0px 0px 15px inset;
+
+  transition: width 0.2s ease-out;
 }
 .imagem-1 img{
   display: block;
@@ -261,7 +255,7 @@ animation-timing-function: linear;
   left: 0px;
   bottom: 0px;
   padding: 0px 2vw;
-  font-size: 20px;
+  font-size: 15px;
 
   -webkit-text-stroke: 1px rgb(255, 135, 239);
 
@@ -275,17 +269,9 @@ animation-timing-function: linear;
 }
 
 .imagem-2 {
+  width: 170px;
 
-  margin: 1% 1% 0% 0%;
-  width: 190px;
-  height: 200px;
-
-  
-  border-style: none none double none;
-  border-width: 5px;
-  border-color: white;
-
-
+  outline: 4px double white;
 }
 
 
@@ -318,7 +304,7 @@ animation-timing-function: linear;
   
   box-shadow: -15px 20px 30px 10px black;
 
-  transition: width 0.1s ease-out;
+  transition: width 0.4s ease-in-out;
 }
 
 /*aparência de links*/
@@ -350,7 +336,7 @@ a.externo:hover{
   width: 200px;
   height: 300px;
   font-size: small;
-  padding-left: 0%;
+  padding: 0% 1% 5px 0%;
   text-align: left;
   
   color: #68073a;
@@ -363,7 +349,7 @@ a.externo:hover{
   overflow-y: scroll;
   overflow-x: hidden;
 
-  box-shadow: 5px 5px 30px 10px black;
+  box-shadow: 5px 5px 30px 10px black, -20px 0px 15px 1px inset black;
 }
 .foto-de-perfil-filha{
 color: white;
@@ -387,15 +373,49 @@ color: white;
 
   box-shadow: 0px 10px 30px 5px black;
 
-  transition: width 0.3s ease;
+  transition: width 0.2s ease-in;
 }
 
 .secret{
-  color: green;
-  background: yellow;
+  position: relative;
+  color: rgba(0, 0, 0, 0);
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0), rgba(255, 0, 0, 0));
+  background-size: 20px 3px;
+  border-radius: 40%;
   display: block;
   text-align: center;
+
+  transform: rotate(25deg);
+
+  font-size: 10px;
+
+  user-select: none;
 }
+
+/* .chekBoard{
+  z-index: 2;
+  position: fixed;
+  
+  width: 100%;
+  bottom: -10px;
+  height: 300px;
+
+  background-color: var(--white); 
+  background-image:
+
+  linear-gradient(45deg, var(--chekerBoardblack) 25%, transparent 25%, transparent 75%, var(--chekerBoardblack) 75%, var(--chekerBoardblack)),
+
+  linear-gradient(45deg, var(--chekerBoardblack) 25%, var(--chekerBoardWhite) 25%, var(--chekerBoardWhite) 75%, var(--chekerBoardblack) 75%, var(--chekerBoardblack))
+  ;
+
+  background-size: 40px 40px;
+  background-position: 0px 0px, 60px 60px;
+
+  transform:;
+
+  background-repeat: repeat;
+  text-align: center;
+} */
 
 footer{
   outline: 10px double rgb(255, 255, 255);
@@ -411,6 +431,7 @@ footer > p{
   color: blue;
 }
 
+
 @keyframes pisca{
 0%{color: #ff0084;}
 100%{color: #ffe1f2;}
@@ -421,8 +442,31 @@ footer > p{
 @media (max-width: 600px){
   .apresentation-pai{
     height: fit-content;
+    width: 80%;
+    margin: 5px 40px;
+  }
+  .pink-background{
+    margin: 5px 110px;
+  }
+  .caixa-debaixo{
+    word-break: break-all;
+    margin: 0px 40px 20px;
+    width: fit-content;
+    padding: 0%;
+  }
+  .foto-de-perfil{
+    display: none;
   }
   .imagem-1{
-    font-size: 30px;
+    font-size: 70px;
+    width: 50%;
+
+    margin: 0%;
+  }
+  .secret{
+    margin: 10%;
+    color: rgb(255, 0, 0);
+    user-select: text;
+    position: fixed;
   }
 }

@@ -28,4 +28,5 @@ botao.addEventListener('click', () => {
     } else{
         audio.pause()
         botao.classList.remove('play2')}
+        audio.currentTime = 0
 });
