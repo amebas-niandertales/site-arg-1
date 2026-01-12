@@ -5,39 +5,68 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <style> 
-    body{
-        background-color: white;
+    p{
+        position: fixed;
+        color: white;
     }
-    div{  
-    margin-left: 20vw;
-    margin-top: 5vw;
-    font-family: Courier New, monospace;
-}
-h2{
-    font-size: 3rem;
-    font-weight: bold;
-}
-p{
-    font-weight: lighter;
-    background: black;
-    color: white;
-    width: 50vw;
-    border-radius: 5px;
-    padding: 8px;
-}
+    .display{
+        display: flex;
+        flex-direction: column;
+    }
+    .meio{
+        border: 2px solid;
+        padding: 5px;
+        border-radius: 7px;
+        margin: 120px auto 0px;
+        box-shadow: -5px 5px 8px rgb(136, 136, 136);
+    }
+    span{
+        width: fit-content;
+        margin: 0 auto;
+        background-color: black;
+        color: aliceblue;
+        text-align: left;
+        padding: 5px;
+        border-radius: 8px;
+        line-height: 30px;
+        width: 400px;
+
+        box-shadow: -10px 10px 5px rgb(136, 136, 136);
+    }
+    .centro{
+        margin-top: 40%;
+        transform: translateY(-50%);
+    }
+    *::selection{
+        background-color: rgb(235, 146, 22);
+        color: black;
+    }
+    hr{
+        border: 1px solid;
+    }
     </style>
     <title>error 404</title>
 </head>
 
 <body>
-    <div><h2>error 404</h2>
-    <p>site não encontrado,<br>
-    não foi possivel encontrar a página, verifique:<br><br>
-    ◆➱sua conexão internet.<br>
-    ◆➱seu cabo de rede LAN.<br>
-    ◆➱se o link está correto.<br>
-    ◆➱se a página realmente existe.<br><br>
+    <p>qual ano?</p>
+<div class="display">
+    <h1 class="meio">ERROR 404</h1>
+    <span class="centro">nos desculpe, site não encontrado.<br>
+    caso o erro persista verifique:
+    <ol>
+        <li>url errada</li>
+        <li>conexão ethernet ou LAN</li>
+        <li>dominio correto</li>
+        <li>se o site que procura existe</li>
+    </ol>
     
-    e se ela não existe, estáis loko manito? tá procurando oque? o reino perdido?</p></div>
+    <hr>
+
+    caso o site realmente não exista:<br>
+    estais loko manito procurando oque?<br>
+    o reino perdido??
+</span>
+</div>
 </body>
 <html>

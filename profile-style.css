@@ -22,6 +22,15 @@ hr{
   border-top: 2px inset rgba(70, 70, 70, 0.685);
 }
 
+.fundo{
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  z-index: 10;
+  pointer-events: none;
+  image-rendering:optimizeSpeed;
+}
+
 .vinheta{
   position: fixed;
   z-index: 100;
