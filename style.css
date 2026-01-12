@@ -13,6 +13,11 @@
 
   min-width: 1px;
 
+
+}
+*::selection{
+  color: pink;
+  background-color: #ff00ff;
 }
 body{
   font-family:Comic Sans MS, Comic Sans, cursive, sans-serif;
@@ -227,9 +232,9 @@ animation-timing-function: linear;
 .pink-background::after{
   content:"porque, porque tenho que sofrer  desse jeito?";
   position: absolute;
-  color: rgba(0, 0, 0, 0.112);
+  color: rgba(0, 0, 0, 0.051);
   left: 0;
-  top: 40px;
+  top: 95px;
 }
 
 

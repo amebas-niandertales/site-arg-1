@@ -23,6 +23,7 @@ hr{
 }
 
 .fundo{
+  opacity: 60%;
   position: fixed;
   width: 100%;
   bottom: 0;
