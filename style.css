@@ -1,4 +1,3 @@
-
 :root{
   --pink: rgb(255, 187, 234);
   --black-pink: rgb(255, 108, 132);
@@ -26,10 +25,14 @@ body{
   padding: 0;
 
   cursor: grab;
+
+
 }
+
 body:active{
   cursor: grabbing;
 }
+
 .play{
   font-family:Comic Sans MS, Comic Sans, cursive, sans-serif;
   position: fixed;
@@ -75,7 +78,6 @@ a{
   color: inherit;
   font-size: inherit;
 }
-
 
 .site-text{
   text-align: center;
@@ -178,14 +180,24 @@ hr{
   /* min-height: 100vh !IMPORTANT; */
   /* width: 100%; */
 }
+.fundo{
+  image-rendering: pixelated;
+  bottom: 0;
+  position: fixed;
 
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  z-index: 500;
+
+  pointer-events: none;
+}
 
 .animacao-piscar:hover{
 animation-name: pisca;
 animation-duration: 0.2s;
 animation-iteration-count: infinite;
 animation-timing-function: linear;
-
 }
 .pink-background { 
   z-index: 2;
@@ -278,15 +290,13 @@ animation-timing-function: linear;
   outline: 4px double white;
 }
 
-
-
-
 .container-duas-colunas{
   display: flex;
   flex-direction: row;
   align-items: flex-start;
   gap: 10px;
 }
+
 .apresentation-pai{
   position: static;
   top: auto;
@@ -335,7 +345,6 @@ a.externo:hover{
   text-align: left;
 }
 
-
 .foto-de-perfil{
   width: 200px;
   height: 300px;
@@ -358,7 +367,6 @@ a.externo:hover{
 .foto-de-perfil-filha{
 color: white;
 } 
-
 
 .caixa-debaixo{
  
